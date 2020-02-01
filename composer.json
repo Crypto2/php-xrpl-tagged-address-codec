@@ -1,0 +1,20 @@
+{
+  "name": "crypto2/php-xrpl-tagged-address-codec",
+  "description": "Encode and Decode an XRPL account address and destination tag to/from X-formatted (tagged) address",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Crypto2",
+      "homepage": "https://github.com/Crypto2/php-xrpl-tagged-address-codec"
+    }
+  ],  
+  "autoload": {
+    "psr-4": {
+      "Crypto2\\": "src/"
+    }
+  }
+  "require": {
+   "php": "~5.3",
+   "stephenhill/base58": "~1.0"
+  }
+}
