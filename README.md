@@ -19,23 +19,23 @@ Install with composer: crypto2/php-xrpl-tagged-address-codec
 ### Encoding
 require('./vendor/autoload.php');
 
-$x = new Crypto2\XAddress();
-//Main Net - No Tag
-$address = $x->Encode('rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf', null, false);
-//Main Net - With Tag
-$address = $x->Encode('rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf', 12345, false);
-//Test Net - With Tag
+$x = new Crypto2\XAddress();<br />
+//Main Net - No Tag<br />
+$address = $x->Encode('rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf', null, false);<br />
+//Main Net - With Tag<br />
+$address = $x->Encode('rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf', 12345, false);<br />
+//Test Net - With Tag<br />
 $address = $x->Encode('rGWrZyQqhTp9Xu7G5Pkayo7bXjH4k4QYpf', 12345, true);
 
 ### Decoding
 require('./vendor/autoload.php');
 
-$x = new Crypto2\XAddress();
+$x = new Crypto2\XAddress();<br />
 $tmp = $x->Decode('XVLhHMPHU98es4dbozjVtdWzVrDjtV8xvjGQTYPiAx6gwDC');
 
-Return is an array with keys: address, dest_tag, testnet
-address: The Ripple address
-dest_tag: The Destination Tag or null if one wasn't set in the tag
+Return is an array with keys: address, dest_tag, testnet<br />
+address: The Ripple address<br />
+dest_tag: The Destination Tag or null if one wasn't set in the tag<br />
 testnet: true if it is a testnet address, false otherwise
 
 ## Credits
